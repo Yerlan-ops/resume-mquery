@@ -3,6 +3,10 @@ h1 {
     font-size: 3em;
 }
 
+h3 {
+    font-family: "Caveat", serif;
+}
+
 ul {
     list-style: none;
     padding: 0;
