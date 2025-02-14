@@ -44,7 +44,7 @@ body {
     background:
     url('images/wavy-blue-sea-surface-png.png') repeat-x bottom; 
     background-size: auto 200px;
-    z-index: 2; /* волны перекрывают маяк */
+    z-index: 3; /* волны перекрывают маяк */
 
 }
 
@@ -61,10 +61,12 @@ body {
 .sailboat {
     
     position: absolute;
+    
     bottom: 0;
     height: 330px;
-    left: 300px;
-    z-index: 1;
+    left: 50%; /* приведение к центру */
+    transform: translateX(-50%); /* донастройка центрирования */
+    z-index: 2;
     
 }
 
