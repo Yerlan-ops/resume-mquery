@@ -1,0 +1,30 @@
+.burger-menu {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: none;
+  border: none;
+}
+
+
+что такое z-index?
+
+что делает cursor: pointer;
+
+что делает position: absolute;
+
+
+
+
+.menu a {}
+
+что означает двойное значение padding: 6px 10px;
+
+
+что делают     	border-radius: 4px;
+		transition: background 0.2s ease;
+от этих параметров внешне ничего не поменялось

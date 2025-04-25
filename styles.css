@@ -70,7 +70,6 @@ body {
     
 }
 
-
 .flag {
 
     width: 20px;
@@ -96,3 +95,21 @@ footer {
 
     text-align: center;
 }
+
+
+.menu-toggle {
+  display: none;
+}
+
+.burger-menu {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: none;
+    border: none;
+}
+
