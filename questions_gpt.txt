@@ -17,7 +17,9 @@
 
 что делает position: absolute;
 
+что такое    transition: 0.3s;  
 
+что делает transform: translateY(0);
 
 
 .menu a {}
