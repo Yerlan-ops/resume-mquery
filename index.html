@@ -18,12 +18,18 @@
     <section class="top-container">
 
         <div class="menu-container">
-            <div class="burger">
+
+
+        <!-- Для мобильных: переключатель -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Бургер (работает и для ПК, и для мобилок) -->
+            <label for="menu-toggle" class="burger">
                 <span></span>
                 <span></span>
                 <span></span>    
-            </div>
-        
+            </label>
+            
+        <!-- Меню -->
             <nav class="menu">
                 <ul>
                     <li><a href="index.html" class="active"><img src="images/location-icon.png" alt="" class="icon"> Media Queries & Flexbox</a></li>

@@ -102,10 +102,17 @@ footer {
   position: fixed;
   top: 15px;
   left: 15px;
-  width: 240px;
-  height: 240px;
   z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /*width: 40px;
+  height: 40px; */
 
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .burger {
@@ -123,9 +130,9 @@ footer {
 
   display: block;
   height: 3px;
+  width: 30px;
   background-color: #333;
   border-radius: 2px;
- 
 
 }
 
@@ -136,19 +143,12 @@ footer {
 .menu {
 
   display: none;
-  position: fixed;
-  top: 55px;
-  left: 10px;
   background: #fff;
   padding: 12px 16px;
   width: 240px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  /*opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease visibility 0s linear 0.3s;
-  */
+  margin-top: 10px;
   z-index: 1000;
 
 }
@@ -171,7 +171,7 @@ footer {
     padding: 6px 10px;
     border-radius: 4px;
     transition: background 0.2s ease;
-  }  
+  } 
 
   .menu a:hover {
     background: #eaf4ff;
@@ -182,11 +182,26 @@ footer {
     color: white;
   }
 
+/* --- Десктоп: показывать при наведении --- */
+
+@media (min-width: 769px) 
+{ .menu-container:hover .menu 
+    {
+        display: block;
+    }
+
+}
+
+/* --- Мобильные: показывать при клике (checkbox) --- */
+
+@media (max-width: 768px) 
+
+{ .menu-toggle:checked + .burger + .menu 
+  
+        {
+            display: block;
+        }
+
+}
 
 
-/* Показывать меню при открытом details */
-
-/* Открытие меню по наведению */
-.menu-container:hover .menu {
-    display: block;
-  }
