@@ -164,21 +164,31 @@ footer {
   }
 
   .menu a {
+    display: flex;
+    align-items: center; /* это выровняет иконку и текст по вертикали */
+    gap: 8px; /* расстояние между иконкой и текстом */
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    display: block;
+
     padding: 6px 10px;
     border-radius: 4px;
     transition: background 0.2s ease;
   } 
 
+  .menu a .icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain; /* это гарантирует что иконка не будет деформироваться*/
+
+  }
+
   .menu a:hover {
-    background: #eaf4ff;
+    background: #87add6b2;
   }
 
   .menu a.active {
-    background: #007bff;
+    background: #044d9bd8;
     color: white;
   }
 
@@ -202,6 +212,69 @@ footer {
             display: block;
         }
 
+
+ /* Превращаем бургер в крест */
+ .menu-toggle:checked + .burger span:nth-child(1) {
+    
+    transform-origin: center;
+    width: 21px;
+    transform: rotate(45deg) translate(2.1px, 5.4px);
+ }
+
+ .menu-toggle:checked + .burger span:nth-child(3) {
+    transform-origin: center;
+    width: 22px;
+    transform: rotate(-45deg) translate(7.5px, -11.95px);
+ }
+
+ .menu-toggle:checked + .burger span:nth-child(2) {
+
+    opacity: 0;
+ }
+
 }
 
+.no-script-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(0.9rem, 1.2vw, 2rem);
+  text-align: center;
+  max-width: 90%;
+  margin: 30px auto;
+  opacity: 0.6;
+  user-select: none;
+  text-shadow:
+    0 0 1px rgba(200, 200, 200, 0.4),
+    0 0 5px rgba(200, 200, 220, 0.2);
 
+}
+
+.no-script-note span {
+  display: inline-block;
+  letter-spacing: 2em;  /* <-- вот это для межбуквенных расстояний */
+  margin-right: 1em; /* <-- вот это для межсловных расстояний */
+}
+
+.no-script-note span:last-child {
+  margin-right: 0; /* последнее слово — без отступа */
+}
+
+@media (max-width: 1024px) {
+  .no-script-note span {
+    letter-spacing: 0.2em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .no-script-note span {
+    letter-spacing: 0.1em;
+    margin-right: 0.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .no-script-note span {
+    letter-spacing: 0.1em;
+    margin-right: 0.2em;
+  }
+}
