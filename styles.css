@@ -250,8 +250,10 @@ footer {
 
 .no-script-note span {
   display: inline-block;
-  letter-spacing: 2em;  /* <-- вот это для межбуквенных расстояний */
-  margin-right: 1em; /* <-- вот это для межсловных расстояний */
+
+  letter-spacing: 0.5em;  /* <-- вот это для межбуквенных расстояний */
+  margin-right: 0.7em; /* <-- вот это для межсловных расстояний */
+
 }
 
 .no-script-note span:last-child {
@@ -267,7 +269,9 @@ footer {
 
 @media (max-width: 768px) {
   .no-script-note span {
-    letter-spacing: 0.1em;
+
+    letter-spacing: 0.15em;
+
     margin-right: 0.4em;
   }
 }
