@@ -228,10 +228,36 @@ color: #222;
 
 }
 
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+.skills-list li {
+  flex: 1 1 45%;
+  max-width: 800px;
+  background-color: #f8f8f8;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+
+
+}
+
 /* --- Десктоп: показывать при наведении --- */
 
 @media (min-width: 1025px) 
-{ .menu-container:hover .menu 
+{ 
+  
+  .menu-container:hover .menu 
     {
         display: block;
     }
@@ -335,9 +361,17 @@ color: #222;
   }
 }
 
+@media (max-width: 600px) {
+  .skills-list li {
+    flex: 1 1 100%;
+  }
+
+}
+
 @media (max-width: 480px) {
   .no-script-note span {
     letter-spacing: 0.1em;
     margin-right: 0.2em;
   }
 }
+
