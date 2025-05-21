@@ -122,6 +122,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  touch-action: manipulation;
 
 }
 
@@ -173,7 +174,7 @@ footer {
 
     padding: 6px 10px;
     border-radius: 4px;
-    transition: background 0.2s ease;
+    transition: background-color 0.2s ease;
   } 
 
   .menu a .icon {
@@ -192,9 +193,44 @@ footer {
     color: white;
   }
 
+.about-section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0 0  15px 15px;
+  background-color: #e9d8b9; /* светло-серый фон */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+}
+
+.about-section h4 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.about-location {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.about-text {
+display: flex;
+flex-direction: row;
+gap: 2rem;
+justify-content: space-between;
+font-size: 1rem;
+line-height: 1.6;
+color: #222;
+
+}
+
 /* --- Десктоп: показывать при наведении --- */
 
-@media (min-width: 769px) 
+@media (min-width: 1025px) 
 { .menu-container:hover .menu 
     {
         display: block;
@@ -204,7 +240,10 @@ footer {
 
 /* --- Мобильные: показывать при клике (checkbox) --- */
 
-@media (max-width: 768px) 
+@media (max-width: 1024px) 
+
+
+
 
 { .menu-toggle:checked + .burger + .menu 
   
@@ -258,6 +297,26 @@ footer {
 
 .no-script-note span:last-child {
   margin-right: 0; /* последнее слово — без отступа */
+}
+
+@media (max-width: 768px) 
+{
+.about-text {
+  flex-direction: column;
+  gap: 0.1rem;
+
+}
+
+.about-section {
+  padding: 1rem;
+
+}
+
+.about-section h4 {
+  font-size: 1.3rem;
+
+}
+
 }
 
 @media (max-width: 1024px) {
