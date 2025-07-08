@@ -253,12 +253,12 @@ color: #222;
 }
 
 .skills-section {
-  background-color: #fefaf6;
+  background-color: #f5bfa1;
   padding: 3rem 1rem 4rem;
   border-top: 1px solid #ddd9d1;
   border-bottom: 1px solid #ddd9d1;
   border-radius: 0 0 12px 12px;
-  box-shadow: 0 -2px 8px rgba(0,0,0, 0.05);
+  box-shadow: 0 -2px 8px rgba(0,0,0, 0.01);
   
 }
 
@@ -270,11 +270,59 @@ color: #222;
 
 }
 
-
 .degree {
   position: relative;
 }
 
+#edu-list {
+  background-color: #80b86a9d;
+  padding: 2rem 1rem 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.edu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+  list-style: none;
+
+}
+
+.edu-list li {
+  flex: 1 1 45%;
+  background-color: #fdf2e9;
+  padding: 1rem; 
+  border-left: 6px solid #2a628f;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: 0 1px 3px;
+rgba(0,0,0,0.0.1);
+  text-align: left;
+  transition: transform 0.2s
+ease-in-out;
+
+
+}
+
+.edu-list li:hover {
+  transorm: translateY(-3px);
+  box-shadow: 0 3px 6px 
+rgba(0, 0, 0, 0.16);
+
+}
+
+#edu-list h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
 /* --- Десктоп: показывать при наведении --- */
 
 @media (min-width: 1415px) 
