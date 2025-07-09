@@ -234,22 +234,17 @@ color: #222;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.7rem;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   max-width: 2480px;
   margin: 0 auto;
 
 }
 
 .skills-list li {
-  flex: 2 1 45%;
-  max-width: 800px;
   background-color: #f8f8f8;
-  padding: 0.7rem 1rem;
+  box-sizing: border-box;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-
-
 }
 
 .skills-section {
@@ -286,24 +281,31 @@ color: #222;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.7rem;
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 0;
+  max-width: none;
+  padding: 0 0.5rem;
   list-style: none;
 
 }
 
+.skills-list li,
 .edu-list li {
-  flex: 1 1 45%;
+  flex: 0 1 45%;
+  max-width: 45%;
+  padding: 0.7rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.edu-list li {
   background-color: #fdf2e9;
-  padding: 1rem; 
   border-left: 6px solid #2a628f;
   border-radius: 6px;
   font-size: 1rem;
   line-height: 1.4;
-  box-shadow: 0 1px 3px;
-rgba(0,0,0,0.0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0,0.1);
   text-align: left;
   transition: transform 0.2s
 ease-in-out;
@@ -312,7 +314,7 @@ ease-in-out;
 }
 
 .edu-list li:hover {
-  transorm: translateY(-3px);
+  transform: translateY(-5px);
   box-shadow: 0 3px 6px 
 rgba(0, 0, 0, 0.16);
 
@@ -433,10 +435,15 @@ rgba(0, 0, 0, 0.16);
 }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 728px) {
   .skills-list li {
     flex: 1 1 100%;
   }
+
+  .edu-list li {
+    flex: 1 1 100%;
+  }
+
 
 }
 
