@@ -299,6 +299,14 @@ color: #222;
   box-sizing: border-box;
 }
 
+
+.skills-list,
+.edu-list {
+  max-width: 1780px;
+  margin: 0 auto;
+}
+
+
 .edu-list li {
   background-color: #fdf2e9;
   border-left: 6px solid #2a628f;
@@ -436,14 +444,10 @@ rgba(0, 0, 0, 0.16);
 }
 
 @media (max-width: 728px) {
-  .skills-list li {
+  .skills-list li,  .edu-list li {
     flex: 1 1 100%;
+    max-width: 100%;
   }
-
-  .edu-list li {
-    flex: 1 1 100%;
-  }
-
 
 }
 
