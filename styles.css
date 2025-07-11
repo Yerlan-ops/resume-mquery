@@ -366,13 +366,16 @@ rgba(2, 0, 0, 0.16);
 
 .lang-list li {
   background-color: #9ebd75;
-  box-sizing: border-box;
+ /* box-sizing: border-box;*/
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.20);
-  
-/*  text-align: left;
-  transition: transform 0.3s;
   font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.20);
+  transition: transform 0.3s;
+ease-in-out;
+/*  text-align: left;
+  
+  
 ease-in-out; */
 
 }
@@ -495,7 +498,7 @@ rgba(2, 0, 0, 0.16);
 }
 
 @media (max-width: 728px) {
-  .skills-list li,  .edu-list li, .langs li {
+  .skills-list li,  .edu-list li, .lang-list li {
     flex: 1 1 100%;
     max-width: 100%;
   }
